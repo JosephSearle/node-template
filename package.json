@@ -1,0 +1,45 @@
+{
+	"name": "node-template",
+	"version": "0.0.0",
+	"private": true,
+	"license": "Apache-2.0",
+	"description": "Approved starting point for NestJS HTTP services.",
+	"engines": {
+		"node": ">=24.15.0"
+	},
+	"scripts": {
+		"build": "nest build",
+		"start": "node dist/main.js",
+		"dev": "nest start --watch",
+		"lint": "biome check .",
+		"format": "biome check --write .",
+		"typecheck": "tsc --noEmit -p tsconfig.json",
+		"test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js"
+	},
+	"dependencies": {
+		"@nestjs/common": "12.2.0",
+		"@nestjs/config": "12.0.1",
+		"@nestjs/core": "12.2.0",
+		"@nestjs/platform-express": "12.2.0",
+		"nestjs-pino": "5.3.1",
+		"pino": "10.4.0",
+		"pino-http": "11.0.0",
+		"reflect-metadata": "0.2.2",
+		"rxjs": "7.8.2",
+		"zod": "4.6.7"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.6.3",
+		"@nestjs/cli": "12.0.10",
+		"@nestjs/testing": "12.2.0",
+		"@types/express": "5.0.6",
+		"@types/jest": "30.0.0",
+		"@types/node": "26.6.5",
+		"jest": "30.5.2",
+		"ts-jest": "29.4.15",
+		"typescript": "6.0.3"
+	},
+	"overrides": {
+		"multer": "2.5.0"
+	}
+}
